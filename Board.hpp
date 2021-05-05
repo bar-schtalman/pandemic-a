@@ -16,7 +16,7 @@ namespace pandemic{
 
             Board(){}
 
-            bool is_clean();
+            static bool is_clean();
 
             int& operator[](City city);
 

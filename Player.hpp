@@ -12,7 +12,7 @@ namespace pandemic{
         City city;
 
         public:
-        Player(Board board,City city){
+        Player(Board& board,City city){
             // this -> board = board;
             // this -> city = city;
         }
@@ -28,7 +28,7 @@ namespace pandemic{
 
 
         //nothing to do down here
-        std::string role();
+        static std::string role();
         Player& take_card(City city);
 
     };
